@@ -1,0 +1,74 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 100%;
+}
+
+p{
+  text-align: center;
+  margin-bottom: 4%;
+  font-size: 1.75em;
+}
+
+section{
+  float: left;
+  position: relative;
+  padding: 20px;
+  border: 1px solid black;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-top: 0%;
+  margin-bottom: 4%;
+  background-color: #DCDCDC;
+}
+
+.Chicken, .Beef, .Sushi{
+  position: relative;
+  float: right;
+  top: -21px;
+  right: -21px;
+  border: 1px solid black;
+  margin: 0;
+  width: 50%;
+  font-size: 1.25em;
+}
+.Chicken{
+  background-color: #E9967A;
+}
+.Beef{
+  background-color: #B22222;
+}
+.Sushi{
+  background-color: #EEDD82;
+}
+
+div{
+  clear: both;
+}
+
+/* desktop version:; width of the browser window is 992px and above */
+@media (min-width: 992px) {
+  section{
+    width: 29.33%;
+  }
+}
+
+/* Tablet view: width of the browser window is between 768px and 991px, inclusively */
+@media (min-width: 768px) and (max-width: 991px) {
+  .tab-row1{
+    width: 46%;
+  }
+  .tab-row2{
+    width: 96%;
+  }
+}
+
+@media (max-width: 767px){
+  .mobile{
+    width: 96%;
+  }
+}
